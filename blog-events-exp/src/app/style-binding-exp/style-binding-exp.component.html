@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+
+<h1 [style.color]="color">{{exampletext}}</h1>
+<h1 [style.color]="'blue'">{{exampletext}}</h1>
+
+<h1 [style.color]="'blue'" [style.backgroundColor]="bgColor">{{exampletext}}</h1>
+<button (click)="updateColor('orange')">Update Color</button>

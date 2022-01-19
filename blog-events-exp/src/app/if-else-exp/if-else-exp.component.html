@@ -1,0 +1,37 @@
+<h1>{{ title }}</h1>
+<br><br>
+<h1 *ngIf="show">Code Step By Step</h1>
+<br><br>
+<h1 *ngIf="show else elseblock">If block</h1>
+<br><br>
+<h1 *ngIf="show; then ifblock else elseblock"></h1>
+
+<ng-template #ifblock>
+    <h1>If Condition</h1>
+</ng-template>
+
+<ng-template #elseblock>
+    <h1>Else Condition</h1>
+</ng-template>
+
+<br><br>
+<h1 *ngIf="showFromString=='yes'; then ifstringblock else elsestringblock"></h1>
+
+<ng-template #ifstringblock>
+    <h1>If Condition from String</h1>
+</ng-template>
+
+<ng-template #elsestringblock>
+    <h1>Else Condition from String</h1>
+</ng-template>
+
+<br><br>
+<ng-template [ngIf]="color==='red'">
+    <h1 style="color:red">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color:green">Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+    <h1 style="color:blue">Blue Color</h1>
+</ng-template>

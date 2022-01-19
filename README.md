@@ -2,6 +2,9 @@
 1. Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.
 2. Angular is a development platform, built on TypeScript.
 
+# Command for Angular Version
+` ng version `
+
 # Angular Essentials
 1. Components
     - Components are the building blocks that compose an application.
@@ -86,6 +89,19 @@
 # Create Module Command
 1. ng generate module [MODULE-NAME]
 
+# For Adding a form in the Angular
+1. Import the 'FormsModule' from the '@angular/forms' library in the 'app.module.ts' file
+`import { FormsModule } from '@angular/forms'`
+
+2. Update the 'imports' array in the 'app.module.ts' file
+`imports: [FormsModule]`
+
+3. Import the 'NgForm' from the '@angular/forms' library in the '.ts' file of component
+`import { NgForm } from '@angular/forms';`
+
+# Commands for installing bootstrap
+1. `ng add @ng-bootstrap/ng-bootstrap`
+
 # Questions
 1. How to install specific angular cli version?
     - We can directly update the version by updating @angular/cli and other dependency with @angular from package.json file.
@@ -108,3 +124,22 @@
 
 6. Why we need inline-css or inline-html?
     - Some cases are there while developing the application that we need to write only one line of html or only one line of css & in that case we do not have to create a separate file for html or css and we can use inline css or inline html functionality.
+
+7. Can we use multiple events over a single element?
+    - Yes, we can use multiple events on a single element
+
+8. Which CSS has the highest priority if classname is same?
+    - Inline CSS has the highest priority, then Internal, then Component style, then Global Style
+
+9. What is Property Binding?
+    - This is the feature of Angular which is used to update the change in input element.
+
+10. Interpolation does not work with boolean value
+
+11. Always use Property Binding for binding the element instead of interpolation.
+
+12. Why we have to use switch case?
+    - If we have more conditions like 20-30 then using switch case is the best practice instead of using if-else
+
+13. Can we use for loop in typescript file?
+    - No we cannot use. We can use *ngFor in html

@@ -1,0 +1,26 @@
+<h1>{{ title }}</h1>
+<br><br>
+<input type="text" #box placeholder="Enter Name" (keyup)="getValue(box.value)">
+<br><br>
+
+<p>{{ displayValue }}</p>
+
+<br><br>
+<input type="text" name="username" #box1 placeholder="Write Something">
+
+<button (click)="displayClickValue(box1.value)">Click Me</button>
+
+<br><br>
+
+<p>{{ displayValueByClick }}</p>
+<br><br>
+
+<!-- We Can Also get other attributes value also -->
+
+<button (click)="displayClickValue(box1.placeholder)">Get Placeholder of Input</button>
+<br><br>
+
+<button (click)="displayClickValue(box1.name)">Get name of Input</button>
+<br><br>
+
+<button (click)="displayClickValue(box1.type)">Get type of Input</button>

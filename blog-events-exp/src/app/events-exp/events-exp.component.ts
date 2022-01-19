@@ -12,4 +12,16 @@ export class EventsExpComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getData() {
+    console.warn("hello data");
+  }
+
+  getStringData(val:string) {
+    console.warn(val);
+  }
+
+  getDataFromInput(val:string) {
+    console.warn(val);
+  }
+
 }

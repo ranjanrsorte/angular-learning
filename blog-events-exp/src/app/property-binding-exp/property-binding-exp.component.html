@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+<!--
+    Below difference between interpolation and property binding is explained
+    Interpolation does not work with boolean value as we can see in the first input field
+    the 'disable' value is considered as a String in the interpolation but same working with Property Binding
+-->
+<input type="text" value={{name}} disabled={{disable}}> <!-- Example of Interpolation -->
+<br> <br>
+<input type="text" [value]=name [disabled]=disable> <!-- Example of Property Binding -->

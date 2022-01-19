@@ -1,0 +1,17 @@
+<h1>{{ title }}</h1>
+
+<h3 *ngFor="let item of users">Name is: {{item}}</h3>
+
+<h3 *ngFor="let item of userDetails">Name is: {{item.name}}, Email is: {{item.email}}, Phone is: {{item.phone}}</h3>
+
+<h1>{{ nestedlooptitle }}</h1>
+
+<ul *ngFor="let item of data">
+    <li>{{ item.name }}</li>
+    <li>{{ item.email }}</li>
+    <li>{{ item.phone }}</li>
+    <ul *ngFor="let itm of item.accounts">
+        <li>{{ itm }}</li>
+    </ul>
+</ul>
+
