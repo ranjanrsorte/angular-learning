@@ -11,5 +11,9 @@ export class PipesExpComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  title = "angular basic Pipes"
+  today = Date();
+  user = {
+    name:'ranjan sorte', age: 25
+  }
 }

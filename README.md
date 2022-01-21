@@ -102,6 +102,9 @@
 # Commands for installing bootstrap
 1. `ng add @ng-bootstrap/ng-bootstrap`
 
+# Command for creating custom pipe
+`ng generate pipe [PIPE_NAME]` or `ng g p [PIPE_NAME]`
+
 # Questions
 1. How to install specific angular cli version?
     - We can directly update the version by updating @angular/cli and other dependency with @angular from package.json file.

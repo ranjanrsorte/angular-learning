@@ -1,0 +1,17 @@
+<h3>{{title}}</h3>
+
+<form [formGroup]="loginForm" (ngSubmit)="loginuser()">
+    <input type="text" placeholder="enter name" formControlName="user" />
+    <br>
+    <span style="color: red" *ngIf="user && user.invalid && user.touched">Please enter valid user name</span>
+    <br><br>
+    <input type="text" placeholder="enter name" formControlName="name" />
+    <br>
+    <span style="color: red" *ngIf="name && name.invalid && name.touched">Please enter valid name</span>
+    <br><br>
+    <input type="password" placeholder="enter password" formControlName="password" />
+    <br>
+    <span style="color: red" *ngIf="password && password.invalid && password.touched">Please enter password</span>
+    <br><br>
+    <button [disabled]="loginForm.invalid">Login</button>
+</form>
