@@ -105,6 +105,12 @@
 # Command for creating custom pipe
 `ng generate pipe [PIPE_NAME]` or `ng g p [PIPE_NAME]`
 
+# Command for creating directive
+`ng generate directive [DIRECTIVE_NAME]` or `ng g directive [DIRECTIVE_NAME]`
+
+# Command for creating service
+`ng generate service [SERVICE_NAME]` or `ng g service [SERVICE_NAME]`
+
 # Questions
 1. How to install specific angular cli version?
     - We can directly update the version by updating @angular/cli and other dependency with @angular from package.json file.
@@ -146,3 +152,6 @@
 
 13. Can we use for loop in typescript file?
     - No we cannot use. We can use *ngFor in html
+
+14. What are Directives?
+    

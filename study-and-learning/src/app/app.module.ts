@@ -17,6 +17,8 @@ import { PipesExpComponent } from './pipes-exp/pipes-exp.component';
 import { UsdtoinrPipe } from './pipes/usdtoinr.pipe';
 import { TemplateDrivenFormExpComponent } from './template-driven-form-exp/template-driven-form-exp.component';
 import { ReactiveFormExpComponent } from './reactive-form-exp/reactive-form-exp.component';
+import { RedElDirective } from './red-el.directive';
+import { DirectiveExpComponent } from './directive-exp/directive-exp.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ReactiveFormExpComponent } from './reactive-form-exp/reactive-form-exp.
     PipesExpComponent,
     UsdtoinrPipe,
     TemplateDrivenFormExpComponent,
-    ReactiveFormExpComponent
+    ReactiveFormExpComponent,
+    RedElDirective,
+    DirectiveExpComponent
   ],
   imports: [
     BrowserModule,
