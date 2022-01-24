@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="formTitle">
+                    <h5>Enter Employee Details</h5>
+                </div>
+                <form #employeeform="ngForm">
+                    <div class="form-group">
+                        <label>Employee Id</label>
+                        <input type="number" class="form-control" name="empid" required [(ngModel)]="employeeid" #empid="ngModel" />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="empname" required [(ngModel)]="employeename" #empname="ngModel" />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="empemail" required [(ngModel)]="employeeemail" #empemail="ngModel" />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="number" class="form-control" name="empphone" required [(ngModel)]="employeephone" #empphone="ngModel" />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control" name="empcity" required [(ngModel)]="employeecity" #empcity="ngModel" />
+                    </div>
+                    <br />
+                    <button class="btn btn-primary" (click)="addEmployee(employeeform.value)">Save</button>
+                    <button class="btn btn-success" (click)="updateEmployee(employeeform.value)" style="margin-left: 6px;">Update</button>
+                    <button class="btn btn-danger" (click)="deleteEmployee(employeeform.value)" style="margin-left: 6px;">Delete</button>
+                    <button class="btn btn-warning" (click)="clear()" style="margin-left: 6px;">Clear</button>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let emp of details">
+                            <td>{{emp.empid}}</td>
+                            <td>{{emp.empname}}</td>
+                            <td>{{emp.empemail}}</td>
+                            <td>{{emp.empphone}}</td>
+                            <td>{{emp.empcity}}</td>
+                            <td>
+                                <button class="btn btn-success" (click)="getEmployeeData(emp)">Edit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>  
+    </div>
+</div>

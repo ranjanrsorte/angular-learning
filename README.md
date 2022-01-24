@@ -101,6 +101,24 @@
 
 # Commands for installing bootstrap
 1. `ng add @ng-bootstrap/ng-bootstrap`
+2. `npm install bootstrap jquery --save`
+3. Check below files are available or not on below path
+```
+node_modules/jquery/dist/jquery.min.js
+node_modules/bootstrap/dist/css/bootstrap.min.css
+node_modules/bootstrap/dist/js/bootstrap.min.js
+```
+4. Update angular.json file as below
+```
+"styles": [
+    "styles.css",
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+],
+"scripts": [
+    "./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+],
+```
 
 # Command for creating custom pipe
 `ng generate pipe [PIPE_NAME]` or `ng g p [PIPE_NAME]`
